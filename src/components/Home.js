@@ -21,7 +21,7 @@ const Home = () => {
     try {
       const link = await s3.getSignedUrl("getObject", {
         Bucket: bucketName,
-        Key: username + ".zip",
+        Key: username + "@timestudy_com_location_labeling_survey.zip",
         Expires: signedUrlExpireSeconds,
       });
       setUrl(link);
